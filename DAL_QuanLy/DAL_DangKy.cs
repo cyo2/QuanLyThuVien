@@ -39,7 +39,7 @@ namespace DAL_QuanLy
                 return true;
             }
         }
-        public bool addNV1(DTO_DangKy DTO_NhanVien2)
+        public int addNV1(DTO_DangKy DTO_NhanVien2)
         {
             using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-DDOK4T1;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True;"))
             {
@@ -64,9 +64,9 @@ namespace DAL_QuanLy
 
                     // Lấy giá trị trả về từ tham số output
                     int returnValue = (int)returnParameter.Value;
-                    if (returnValue == 0) return true;
-
-                    else return false; 
+                    if (returnValue == 1) return 1;
+                    else if(returnValue == 2)  return 2;
+                    else return 0; 
                 }
             }
          

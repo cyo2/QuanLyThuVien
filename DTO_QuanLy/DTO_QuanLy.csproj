@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_LoginInfo.cs" />
     <Compile Include="DTO_PhieuMuon.cs" />
     <Compile Include="DTO_DangKy.cs" />
     <Compile Include="DTO_DangNhap.cs" />

@@ -108,12 +108,17 @@ namespace GUI_QuanLy
 
                 // Tạo DTo
                 DTO_DangKy tv = new DTO_DangKy(login.Trim(), pass.Trim(), hotennv.Trim(), loai.Trim()); // Vì ID tự tăng nên để ID số gì cũng dc
-                if (!busDangKy.addNhanVien(tv))
+                if (busDangKy.addNhanVien(tv) == 2)
                 {
-                    MessageBox.Show("Nhân Viên Này Đã Tồn Tại");
+                    MessageBox.Show("Ten NV bị trùng!!!");
                     return;
                 }
-                else
+                else if (busDangKy.addNhanVien(tv) == 1)
+                {
+                    MessageBox.Show("MaNV bị trùng!!!");
+                    return;
+                }
+                else if (busDangKy.addNhanVien(tv) == 0)
                 {
                     MessageBox.Show("Đăng Ký Nhân Viên Thành Công!!!");
                     GUI_DangNhap frmDangNhap = new GUI_DangNhap();

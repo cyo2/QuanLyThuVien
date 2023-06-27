@@ -19,9 +19,9 @@ namespace BUS_QuanLy
         {
             return dalDangNhap.getPermissionUser_Login(username, password);
         }
-        public string _Login(string username, string password)
+        public DTO_LoginInfo _Login2(string username, string password)
         {
-            return dalDangNhap._Login(username, password);
+            return dalDangNhap._Login2(username, password);
         }
 
 

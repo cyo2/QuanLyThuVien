@@ -20,7 +20,6 @@ namespace GUI_QuanLy
     {
         BUS_DangNhap busDangNhap = new BUS_DangNhap();
 
-
         public delegate void delPassData(string ten, string quyen);
         public GUI_DangNhap()
         {
@@ -90,21 +89,21 @@ namespace GUI_QuanLy
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            DTO_LoginInfo loginInfo = new DTO_LoginInfo();
             string username = txtUSER.Text;
             string salt = "QUYETDAICA1997";
-            string password = EncodeSHA1(txtPASS.Text + salt);
-            string NameUser = busDangNhap.getNameUser_Login(username, password);
-            string Quyen = busDangNhap.getPermissionUser_Login(username, password);
-            string p = busDangNhap._Login(username, password);
-            
-            if (p.ToString() == "1")
+            string password = EncodeSHA1(txtPASS.Text);
+            //string NameUser = busDangNhap.getNameUser_Login(username, password);
+            //string TenNhanVien =  busDangNhap._Login2(username,password);
+            loginInfo =  busDangNhap._Login2(username,password);       
+            if (loginInfo.Status == "1")
             {             
                 this.Hide();
                 GUI_Home frHome = new GUI_Home();
                 frHome.Show();
 
                 delPassData del = new delPassData(frHome.funData);
-                del(NameUser, Quyen);
+                del(loginInfo.TenNV, loginInfo.Loai);
             }
             else MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!\n\tVui lòng kiểm tra lại!!!");
         }

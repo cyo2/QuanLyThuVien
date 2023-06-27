@@ -146,3 +146,14 @@ D:\ltudC-sharp\QuanLyThuVien\BUS_QuanLy\bin\Debug\DTO_QuanLy.dll
 D:\ltudC-sharp\QuanLyThuVien\BUS_QuanLy\bin\Debug\DAL_QuanLy.pdb
 D:\ltudC-sharp\QuanLyThuVien\BUS_QuanLy\bin\Debug\DTO_QuanLy.pdb
 D:\ltudC-sharp\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CopyComplete
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\BUS_QuanLy.dll
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\BUS_QuanLy.pdb
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\DAL_QuanLy.dll
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\DTO_QuanLy.dll
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\DAL_QuanLy.pdb
+F:\QuanLyThuVien\BUS_QuanLy\bin\Debug\DTO_QuanLy.pdb
+F:\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.AssemblyReference.cache
+F:\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CoreCompileInputs.cache
+F:\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CopyComplete
+F:\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.dll
+F:\QuanLyThuVien\BUS_QuanLy\obj\Debug\BUS_QuanLy.pdb
